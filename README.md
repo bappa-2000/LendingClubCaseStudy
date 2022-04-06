@@ -1,52 +1,47 @@
-# Project Name
-> Outline a brief description of your project.
+# Lending Club Case Study
+> The goal of this case study is to help finance company in decision making for loan approval based on the applicant’s profile
 
 
 ## Table of Contents
-* [General Info](#general-information)
+* [Business Requirements](#business_requirements)
+* [Approach](#approach)
 * [Technologies Used](#technologies-used)
+* [Python Libraries Used](#python-libraries-used)
 * [Conclusions](#conclusions)
-* [Acknowledgements](#acknowledgements)
 
-<!-- You can include any other section that is pertinent to your problem -->
 
-## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
+## Business Requirements
+- Identify patterns using past loan application data that can trigger charge-off loans
+- Risks involved
+  - Not approving loans for the applicants who are likely to repay the loan
+  - Approving loans for the applicants who are likely to default
+- A dataset of loan applications from 2007 to 2011 has to be referred as the base for this analysis
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
-## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
-
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+## Approach
+- Data fields understanding
+- Data Pre-processing
+- Exploratory Data Analysis 
 
 
 ## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
-
-<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
-
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
+- Python 3.8
+- Jupyter Notebook
 
 
-## Contact
-Created by [@githubusername] - feel free to contact me!
+## Python Libraries Used
+- Numpy
+- Pandas
+- Matplotlib
+- Seaborn
+- Plotly, Express, Graph Objects, Subplot
 
 
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
+## Conclusions
+- Applicants who have taken the loan for “small business” are having highest probability (27.79%)  to default. 
+- Defaulter Probability is the highest (22.15%) for the applicants having no employment history  (Marked as “Unknown” in the graph)
+- Probability to default is increasing from grade A to G. Sub-grade F5 has maximum probability (52.5%) to default.
+- Low annual income ($25,000 or less) applicants are highest probable (19.59%) to default. 
+- Probability to default is increasing with increase in Loan Amount. Applicants with Loan amount of $25,000 or above are highly probable to default. 
+- Probability to default is increasing with increasing Interest Rate and DTI. Loan applicants with interest rate or DTI 19% or above are highly probable to default.
+- Applicants from Nebraska (NE) have the highest probability (60%) to default.
